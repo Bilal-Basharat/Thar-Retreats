@@ -8,9 +8,7 @@
 }
 
 .leftNavBar{
-    /* border: 1px solid red; */
     box-sizing: border-box;
-    /* margin: 0 0 0 25px; */
     flex: 1;
     display: flex;
     justify-content: center;
@@ -80,20 +78,7 @@
     align-items: center;
     /* border: 1px solid black; */
 }
-.btnLogin{
-  font-family: 'helvetica Neue' sans-serif;
-  font-size: 18px;
-  color: rgb(161, 0, 0);
-  border: none;
-  cursor: pointer;
-  width: 110px;
-  box-shadow: 0 0px 10px 0 rgba(0,0,0,0.25);
-  background-color: orange;
-  border-radius: 10px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-.btnSignUp{
+.btnLogin, .btnSignUp{
   font-family: 'helvetica Neue' sans-serif;
   font-size: 18px;
   color: rgb(161, 0, 0);
@@ -108,11 +93,46 @@
     transition: background-color 0.3s ease;
 }
 
-.btnLogin:hover{
+.btnLogin:hover, .btnSignUp:hover{
   background-color: white;
   color: rgb(161, 0, 0);
 }
-.btnSignUp:hover{
-  background-color: white;
-  color: rgb(161, 0, 0);
+
+/* for mobiles and tablets */
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    height: auto;
+  }
+.leftNavBar img{
+width: 100px;
+margin: 10px;
+
+}
+  .centerNavBar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropDown_Content {
+    position: static;
+    /* display: block; */
+    box-shadow: none;
+  }
+  .dropDown_Content a {
+    display: block;
+    /* box-shadow: none; */
+  }
+
+  .dropDown:hover .dropDown_Content {
+    display: block;
+  }
+
+  .rightNarBar {
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin: 10px 0 15px 0 ;
+    align-items: flex-end;
+  }
 }
