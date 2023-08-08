@@ -1,0 +1,10 @@
+.home{
+    height: 100vh;
+}
+
+.background{
+    background: url('../images/pexels-recal-media-60217.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
