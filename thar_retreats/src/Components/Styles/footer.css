@@ -1,0 +1,109 @@
+.footer{
+    font-family: 'Raleway', sans-serif;
+    padding: 50px;
+    display: flex;
+    background-color: rgba(50, 50, 50, 1);
+    color: white;
+}
+
+.leftFooter{
+    width: 400px;
+    box-sizing: border-box;
+    /* flex: 1; */
+    /* border: 1px solid red; */
+}
+.leftFooter a{
+    text-decoration: none;
+    color: white;
+}
+.centreFooter{
+    width: 600px;
+    /* flex: 1; */
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.centreFooter li{
+        list-style: none;
+}
+.footerLink{
+  margin-left: 200px;
+    line-height: 1.5;
+    color: rgba(232, 232, 232, 0.77);
+    font-family: 'helvetica Neue', sans-serif;
+    /* font-size: 16px; */
+    /* padding: 20px; */
+    /* border: 1px solid black; */
+    text-decoration: none;
+    transition: margin-left 0.3s ease;
+}
+  
+.footerLink:hover{
+  color: white;
+  margin-left: 220px;
+}
+.rightFooter{
+    /* display: flex; */
+    flex: 1;
+    padding: 20px 0 0 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid red; */
+}
+
+.rightFooter input{
+      border-radius: 5px;
+      width: 300px;
+      height: 40px;
+      border: none;
+      padding-left: 15px;
+    background-color: rgb(74, 74, 74);
+}
+.sendIcon {
+  margin-left: 10px;
+  color: #fff; /* Icon color */
+  cursor: pointer;
+}
+
+.imgIcon{
+    width: 10%;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    height: auto;
+  }
+.leftNavBar img{
+width: 100px;
+margin: 10px;
+
+}
+  .centerNavBar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropDown_Content {
+    position: static;
+    /* display: block; */
+    box-shadow: none;
+  }
+  .dropDown_Content a {
+    display: block;
+    /* box-shadow: none; */
+  }
+
+  .dropDown:hover .dropDown_Content {
+    display: block;
+  }
+
+  .rightNarBar {
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin: 10px 0 15px 0 ;
+    align-items: flex-end;
+  }
+}

@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import NavBar from './Components/Pages/navBar';
 import Home from './Pages/Home'
-
+import Footer from './Components/Pages/footer';
 function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ function App() {
     </Switch>
     
     </div>
+    <Footer />
     </Router>
   );
 }
