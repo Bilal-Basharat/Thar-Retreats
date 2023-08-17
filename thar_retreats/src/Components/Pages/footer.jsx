@@ -14,19 +14,19 @@ export default function Footer() {
          <Link> info@tharetreats.com </Link>
         </p>
         <p> +92 304 260 23 60 </p>
-        <Link to='#'> 
+        <Link> 
         <img className='imgIcon' src={require('../../images/icons/linkedIn.png')} alt="" />
         </Link>
 
-        <Link to='#'> 
+        <Link> 
         <img className='imgIcon' src={require('../../images/icons/fb.png')} alt="" />
         </Link>
         
-        <Link to='#'> 
+        <Link> 
         <img className='imgIcon' src={require('../../images/icons/instagram.png')} alt="" />
         </Link>
         
-        <Link to='#'> 
+        <Link> 
         <img className='imgIcon' src={require('../../images/icons/youtube.png')} alt="" />
         </Link>
         
@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="rightFooter">
             <h3> Newsletter </h3>
             <input type="email" placeholder='Your Email' />
-            <Link to="#">
+            <Link>
             <FontAwesomeIcon icon="paper-plane" className="sendIcon" />
             </Link> 
         <p style={{width:'300px', lineHeight:'25px',marginTop:'20px'}}> Receive latest offers and promos without spam. You can cancel anytime. </p>
