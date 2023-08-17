@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column; /* Align children vertically */
     align-items: center; /* Center content horizontally */
-    height: 2000vh;
+    /* height: 1000vh; */
 }
 
 .background{
@@ -10,6 +10,7 @@
     background-size:cover;
     width: 100%;
     height: 125vh;
+    background-attachment: fixed;
 }
 
 .belowHeader{
@@ -39,11 +40,12 @@
     background-color: white;
     text-align: center; /* Center content horizontally */
     padding: 20px; /* Add padding for better spacing */
+    /* border: 1px solid black; */
 }
 /* styling for services h1 portion */
 .services h1{
     font-size: 40px;
-    color: rgb(161, 0, 0);
+    color: rgb(161, 120, 0);
     margin-bottom: 0;
 }
 /* styling for services icon portion */
@@ -89,7 +91,7 @@
     background: url('../images/family\ suite\ room\ 1.jpg');
         background-position: center center;
         background-size: cover;
-    transition: background-size 0.5s;
+        transition: size 0.5s;
 }
 
 .sBlockBackground1:hover,
@@ -120,6 +122,7 @@
 }
 .sBlock h4 {
     display: none;
+    transition: top 0.3s; /* Add transition for smooth animation */
 }
 .sBlock:hover {
     cursor: pointer;
@@ -139,17 +142,26 @@
     text-decoration:underline;
 }
 
-/* gallery block styling */
+
+/* gallery section styling */
 .gallerySection{
     font-family: 'Raleway', sans-serif;
     background-color: white;
     text-align: center; /* Center content horizontally */
     padding: 20px; /* Add padding for better spacing */
-    width: 100%;
+    width: 90%;
+    /* border: 1px solid red; */
     box-sizing: border-box;
 }
+.gallerySection:first-child{
+    padding-left: 0;
+}
+.gallerySection:last-child{
+    padding-right: 0;
+}
+
 .gallerySection h1{
-    color: rgb(160, 0, 0);
+    color: rgb(160, 120, 0);
     font-size: 42px;
 }
 
@@ -161,9 +173,18 @@
     /* margin: auto; */
 }
 
-/* styling for services block portion */
+/* styling for gallery block portion */
 .galleryBlockInside{
     margin: 25px 0 0px 25px;
+}
+.galleryBlockInside:first-child{
+    margin-left: 0;
+}
+.galleryBlockInside:nth-child(3){
+    margin-left: 0;
+}
+.galleryBlockInside:last-child{
+    margin-right: 0;
 }
 .sBlock:first-child{
     margin-left: 0;
@@ -173,25 +194,26 @@
 .gBlockBackground{
     /* border: 1px solid red; */
     border-radius: 10px;
-    width: 700px;
+    width: 650px;
     height: 400px;
     background-size:cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .gBlockBackground2{
-    /* border: 1px solid red; */
     border-radius: 10px;
-    width: 460px;
+    width: 425px;
     height: 300px;
     background-size:cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Main Facilities Section */
 .MainFacilities{
-    width: 100%;
+    width: 90%;
 }
 .MainFacilities h1{
-    color: rgb(160, 0, 0);
+    color: rgb(160, 100, 0);
+    margin: 50px 0;
 }
 .facilities{
     display: flex;
@@ -199,7 +221,96 @@
     box-sizing: border-box;
 }
 .facilitiesInside{
-    /* width: 33%; */
     flex: 1;
-    border: 1px solid red;
+    font-family: 'Raleway', 'Serif';
+}
+.facilitiesInside h2{
+    color: rgb(150, 120, 0);
+}
+.facilitiesInside p{
+    padding: 0 20px;
+    text-align:center;
+}
+.facilitiesIcon {
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    color: rgb(150, 120, 0);
+}
+
+/* news and events section */
+.newsEvents{
+    margin: 50px 0 100px 0;
+    text-align: left;
+    width: 90%;
+    box-sizing: border-box;
+}
+.newsEvents h1{
+    color: rgb(160, 120, 0);
+    text-decoration:underline;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.newsCard{
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.newsCardInside{
+    height: 75vh;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    flex: 1;
+    /* border: 1px solid black; */
+}
+.newsCardInside h2{
+    padding: 0 20px 10px 20px;
+    font-weight: 500;
+    height: 60px;
+}
+.newsCardInside:first-child{
+    margin-left: 0;
+}
+.newsCardInsideImg{
+    width: 100%;
+    height: 67%;
+    
+    border-radius: 10px 10px 0 0;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+.newsCardInsideImg:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+}
+.read-more{
+    /* border: 1px solid red; */
+    width: max-content;
+    position: relative;
+    padding: 0 20px 20px 20px;
+    cursor: pointer;
+}
+.read-more:hover{
+    color: rgba(160, 120, 0, 1);
+}
+.read-more::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    width: 70%;
+    left: 20px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 20px;
+    transform: scaleX(0.2);
+    transition: transform 0.3s ease-in;
+}
+
+.read-more:hover::after{
+    transform: scaleX(1);
+    background-color: rgba(160, 120, 0, 1);
+
 }

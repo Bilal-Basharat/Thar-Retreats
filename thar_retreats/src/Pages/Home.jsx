@@ -80,24 +80,64 @@ export default function Home() {
         </div>
 
 <div className="MainFacilities">
-  <h1> Main Facilities </h1>
+  <h1> Main Facilities </h1>  
   <div className="facilities">
+  
     <div className="facilitiesInside">
-
-      <h2> This is something </h2>
-
+        <FontAwesomeIcon icon='fa-car' size='2x' className='facilitiesIcon' />
+      <h2> Private Parking </h2>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores eveniet aperiam quo illum modi veniam magni unde quisquam odit ad!</p>
     </div>
+  
     <div className="facilitiesInside">
-
-      <h2> This is something </h2>
-
+        <FontAwesomeIcon icon='fa-wifi' size='2x' className='facilitiesIcon' />
+      <h2> High Speed Wifi  </h2>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores eveniet aperiam quo illum modi veniam magni unde quisquam odit ad!</p>
     </div>
+  
     <div className="facilitiesInside">
-
-      <h2> This is something </h2>
-
+        <FontAwesomeIcon icon='fa-martini-glass-citrus' size='2x' className='facilitiesIcon' />
+      <h2> Bar & Restaurent </h2>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores eveniet aperiam quo illum modi veniam magni unde quisquam odit ad!</p>
+    </div>
+  
+    <div className="facilitiesInside">
+        <FontAwesomeIcon icon='fa-swimming-pool' size='2x' className='facilitiesIcon' />
+      <h2> Swimming Pool </h2>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores eveniet aperiam quo illum modi veniam magni unde quisquam odit ad!</p>
     </div>
   </div>
+</div>
+
+<div className="newsEvents" id='newsEvents'>
+  <h1> News & Events </h1>
+
+    <div className="newsCard">
+      
+      <div className="newsCardInside">
+      <img src={require('../images/news & events/travel guide.jpg')} className='newsCardInsideImg' alt="" />
+      <h2>The vacation & Travel Support 2023 </h2>
+      <h4 className='read-more'> Read More </h4>
+      </div>
+      
+      <div className="newsCardInside">
+      <img src={require('../images/news & events/cycling tour.jpg')} className='newsCardInsideImg' alt="" />
+      <h2> Cycling Tour 2023 </h2>
+      <h4 className='read-more'> Read More </h4>
+      </div>
+      
+      <div className="newsCardInside">
+      <img src={require('../images/news & events/restaurant.jpg')} className='newsCardInsideImg' alt="" />
+      <h2> Best local restaurant in 2023 </h2>
+      <h4 className='read-more'> Read More </h4>
+      </div>
+
+
+    </div>
+
+
+
+  
 </div>
 
          </div>

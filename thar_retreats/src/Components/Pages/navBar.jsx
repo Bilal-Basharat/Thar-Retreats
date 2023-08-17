@@ -17,8 +17,9 @@ export default function NavBar() {
 
 <button className='dropBtn'> Accomodation </button>
 <div className="dropDown_Content">
-  <Link> Room Type 1 </Link>
-  <Link> Room Type 2 </Link>
+  <Link> Superior Room </Link>
+  <Link> Deluxe Room </Link>
+  <Link> Junior Suite Room </Link>
 </div>
   </div>
 <Link> News and Events </Link>
