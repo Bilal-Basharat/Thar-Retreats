@@ -10,11 +10,11 @@ export default function Footer() {
 
         <div className="leftFooter">
             <h3> Contacts </h3>
-        <p> Near Sindh Bakery, Opposite National Bank of Pakistan, Islamkot 69240 Pakistan </p>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolores ab commodi? </p>
        <p>
          <Link> info@tharetreats.com </Link>
         </p>
-        <p> +92 304 260 23 60 </p>
+        <p> +92 300 123 45 67 </p>
         <Link> 
         <img className='imgIcon' src={require('../../images/icons/linkedIn.png')} alt="" />
         </Link>

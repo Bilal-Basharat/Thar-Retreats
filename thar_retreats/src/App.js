@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 // import Footer from './Components/Pages/footer';
 import Login from './Pages/login';
 import SignUp from './Pages/SignUp';
+import ContactUs from './Pages/ContactUs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
     <Switch>
 
+    <Route path="/ContactUs" exact component={ContactUs} />
     <Route path="/" exact component={Home} />
     <Route path="/signUp" exact component={SignUp} />
     <Route path="/login" exact component={Login} />

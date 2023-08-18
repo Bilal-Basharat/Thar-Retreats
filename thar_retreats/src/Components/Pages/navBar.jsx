@@ -33,8 +33,8 @@ const handleScroll = (id) => {
 </div>
   </div>
 <Link to="/" onClick={() => handleScroll("newsEvents")}> News and Events </Link>
-<Link> About Us </Link>
-<Link> Contact Us </Link>
+<Link > About Us </Link>
+<Link to="/ContactUs"> Contact Us </Link>
 </div>
 <div className="rightNarBar">
      <Link to="/login">
