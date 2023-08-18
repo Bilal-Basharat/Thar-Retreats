@@ -43,6 +43,7 @@
     display: inline-block;
 }
 
+
 .dropBtn {
     background-color: transparent;
     font-family: 'helvetica Neue' sans-serif;
@@ -83,7 +84,7 @@
     align-items: center;
     /* border: 1px solid black; */
 }
-.btnLogin, .btnSignUp{
+.btnLoginNav, .btnSignUpNav{
   font-family: 'helvetica Neue' sans-serif;
   font-size: 18px;
   color: rgb(161, 0, 0);
@@ -98,7 +99,7 @@
     transition: background-color 0.3s ease;
 }
 
-.btnLogin:hover, .btnSignUp:hover{
+.btnLoginNav:hover, .btnSignUpNav:hover{
   background-color: white;
   color: rgb(161, 0, 0);
 }

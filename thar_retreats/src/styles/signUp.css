@@ -1,0 +1,91 @@
+.signUp{
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    width: 100%;
+    background-image: url('../images/gallery/Desert\ Hotels_Wolwedans\ Dunes\ Lodge_Namibia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.signUpCont{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 100px auto 100px auto;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.signUpInside{
+    display: flex;
+    height: 100%;
+    padding: 10px;
+
+}
+.signUpCont h1{
+    margin-left:auto;
+    margin-right: 100px;
+    color: green;
+    margin-bottom: 30px;
+}
+
+.signUpLeftPic{
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 100%;
+    background-image: url('../images/gallery/hotel-lobby.jpg');
+    background-size: cover;
+}
+
+.signUpForm{
+    margin-left:auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signUpForm a{
+    text-decoration: none;
+    color: green;
+}
+.lable{
+    margin-top: 5px;
+    margin-left: -160px;
+    font-family: 'Raleway','Serif';
+    font-size: 18px;
+    color: green;
+    font-weight: 600;
+}
+.input{
+    font-family: 'Raleway','Serif';
+    font-size: 18px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btnSignUp{
+    font-family: 'Raleway','Serif';
+    font-size: 18px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.btnSignUp:hover{
+    cursor: pointer;
+    background-color: rgb(19, 153, 19);
+}
+
+.btnGoogle{
+    
+}

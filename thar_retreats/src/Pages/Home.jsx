@@ -1,10 +1,13 @@
 import React from 'react'
 import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import NavBar from '../Components/Pages/navBar';
 
 export default function Home() {
+
   return (
 <>
+<NavBar />
     <div className='home'>
         
         <div className="background">

@@ -1,0 +1,87 @@
+.login{
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    width: 100%;
+    background-image: url('../images/hotel\ resort\ 1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.loginCont{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 100px auto 100px auto;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.loginInside{
+    display: flex;
+    height: 100%;
+    padding: 10px;
+
+}
+.loginCont h1{
+    margin-left:auto;
+    margin-right: 100px;
+    color: green;
+    margin-bottom: 30px;
+}
+
+.loginLeftPic{
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 100%;
+    background-image: url('../images/gallery/hotel-lobby.jpg');
+    background-size: cover;
+}
+
+.loginForm{
+    margin-left:auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginForm a{
+    text-decoration: none;
+    color: green;
+}
+.lable{
+    margin-top: 10px;
+    margin-left: -160px;
+    font-family: 'Raleway','Serif';
+    font-size: 18px;
+    color: green;
+    font-weight: 600;
+}
+.input{
+    font-family: 'Raleway','Serif';
+    font-size: 18px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btnLogin{
+    font-family: 'Raleway','Serif';
+    font-size: 18px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.btnLogin:hover{
+    cursor: pointer;
+    background-color: rgb(19, 153, 19);
+}

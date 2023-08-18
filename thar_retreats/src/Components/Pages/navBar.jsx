@@ -3,7 +3,17 @@ import '../Styles/navBar.css';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function NavBar() {
-  
+
+  // Function to handle smooth scrolling
+const handleScroll = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+};
+
   return (
     <>
     <div className='navBar'> 
@@ -12,7 +22,7 @@ export default function NavBar() {
       </div>
 <div className="centerNavBar">
 
-  <Link>   Home </Link>
+  <Link to="/">   Home </Link>
   <div className="dropDown">
 
 <button className='dropBtn'> Accomodation </button>
@@ -22,13 +32,18 @@ export default function NavBar() {
   <Link> Junior Suite Room </Link>
 </div>
   </div>
-<Link> News and Events </Link>
+<Link to="/" onClick={() => handleScroll("newsEvents")}> News and Events </Link>
 <Link> About Us </Link>
 <Link> Contact Us </Link>
 </div>
 <div className="rightNarBar">
-      <button className='btnLogin'> Login </button>
-      <button className='btnSignUp'> Sign Up </button>
+     <Link to="/login">
+      <button className='btnLoginNav'> Login </button>
+     </Link>
+     <Link to="/signUp">
+
+      <button className='btnSignUpNav'> Sign Up </button>
+    </Link>
 </div>
     </div>
     </>
