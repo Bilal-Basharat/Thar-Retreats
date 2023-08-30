@@ -16,17 +16,17 @@ export default function SignUp() {
           
             </div>
             
-                <form action="" className='signUpForm'>
+                <form action="http://localhost:4000/register" method='post' className='signUpForm'>
             <h1> SignUp </h1>
 
                     <label className='lable'> Username </label>
-                    <input type="text" className='input' />
+                    <input name='name' type="text" className='input' />
 
                     <label className='lable'> Email </label>
-                    <input type="email" className='input' />
+                    <input name='email' type="email" className='input' />
                     
                     <label htmlFor="" className='lable'> Password </label>
-                    <input type="password" className='input ' />
+                    <input name='password' type="password" className='input ' />
 
             <button className='btnSignUp' > Sign Up </button>
                     <p> Already have an account. <Link to="/login"> Login here </Link> </p>
